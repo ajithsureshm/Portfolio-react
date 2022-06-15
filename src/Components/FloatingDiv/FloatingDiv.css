@@ -1,0 +1,21 @@
+.FloatingDiv{
+    justify-content: space-around;
+    display: flex;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    align-items: center;
+    padding: 0px, 28px, 0px, 0px;
+    height: 4rem;
+    padding-right: 13px;
+
+}
+
+.FloatingDiv>img{
+    transform: scale(0.4);
+}
+
+.FloatingDiv>span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+}
