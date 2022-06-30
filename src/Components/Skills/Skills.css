@@ -2,7 +2,7 @@
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 90vh;
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 /* right side */
@@ -19,6 +19,8 @@
     box-shadow: var(--smboxShadow);
     top: 3rem;
     background: white;
+    z-index: 2;
+
 }
 
 .s-mainCircle>*{
@@ -74,17 +76,60 @@
     height: 13rem;
     width: 13rem;
     border-radius: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .blueCircle{
     background: rgb(6, 6, 146);
     left: 11rem;
     top: -1rem;
+    z-index: -1;
+
 }
 
 .yellowCircle{
     background: rgb(236, 215, 25);
     left: 11rem;
     top: 7rem;
+    z-index: -4;
+
+}
+
+@media screen and (max-width:480px){
+    .skills{
+        flex-direction: column;
+        height: 50rem;
+        padding: 0;
+        gap: 5rem;
+        /* top: 15rem; */
+        bottom: -3rem;
+    }
+
+    .s-right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.6);
+        left: -1rem;
+    }
+
+    .s-mainCircle{
+        flex-direction: row;
+        top: -3rem;
+        left: -2rem;
+    }
+
+    .s-secCircle{
+        left: 8rem !important;
+    }
+   .blueCircle{
+       display: none;
+   }
+   .yellowCircle{
+       display: none;
+   }
+   .s-mainCircle{
+       flex-direction: row;
+   }
+  
 }
